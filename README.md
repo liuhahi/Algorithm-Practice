@@ -6,8 +6,10 @@
 2 for i = 0 to n
 3   r[i] = -∞
 4 return MEMOIZED-CUT-ROD-AUX
+```
 
 ### MEMOIZED-CUT-ROD-AUX(p, n, r)
+```javascript
 1 if r[n] >= 0
 2   return rOEn
 3 if n == 0
@@ -17,6 +19,7 @@
 7     q = max(q, p[i] + MEMOIZED-CUT-ROD-AUX(p, n-i, r)
 8     r[n] = q
 9 return q
+```
 
 ### BOTTOM-UP-CUT-ROD
 ```javascript
@@ -28,3 +31,4 @@
 6     q = max(q, p[i] + r[j - i])
 7     r[j] = q
 8 return r[n]
+```
