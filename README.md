@@ -1,5 +1,5 @@
 # Algorithm-Practice
-## Dynamic programming
+## Dynamic programming summary
 Four steps:
 ```
 1. Characterize the structure of an optimal solution.
